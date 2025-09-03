@@ -1,0 +1,78 @@
+# Flutter & Dart
+.dart_tool/
+.packages
+.pub-cache/
+build/
+flutter_*.png
+.flutter-plugins
+.flutter-plugins-dependencies
+generated_plugin_registrant.dart
+
+# iOS
+ios/Flutter/Flutter.framework
+ios/Flutter/Flutter.podspec
+ios/Flutter/Generated.xcconfig
+ios/.symlinks/
+ios/Pods/
+ios/Podfile.lock
+ios/Runner.xcworkspace/
+ios/Flutter/App.framework
+ios/Flutter/engine/
+
+# Android
+android/.gradle/
+android/captures/
+android/.idea/
+android/local.properties
+android/app/debug
+android/app/profile
+android/app/release
+
+# VS Code
+.vscode/
+.history/
+
+# IntelliJ / Android Studio
+*.iml
+.idea/
+*.ipr
+*.iws
+
+# macOS
+macos/Flutter/GeneratedPluginRegistrant.swift
+macos/Pods/
+macos/Podfile.lock
+macos/.symlinks/
+macos/Flutter/ephemeral/
+macos/Flutter/App.framework
+
+# Web
+web/manifest.json
+web/favicon.png
+web/icons/
+
+# Windows
+windows/Flutter/ephemeral/
+windows/.dart_tool/
+windows/.idea/
+
+# Linux
+linux/Flutter/ephemeral/
+linux/.dart_tool/
+linux/.idea/
+
+# Firebase
+firebase.json
+firebase-debug.log
+
+# Environment files
+.env
+.env.*
+
+# Others
+*.log
+*.tmp
+*.bak
+*.swp
+*.lock
+*.DS_Store
