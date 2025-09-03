@@ -79,7 +79,7 @@ class _LoginScreenState extends State<LoginScreen> {
               borderRadius: BorderRadius.circular(20),
               boxShadow: [
                 BoxShadow(
-                  color: Colors.black.withValues(alpha: 0.05), // Fixed deprecated withOpacity
+                  color: Colors.black.withOpacity(0.05), // Fixed deprecated withOpacity
                   blurRadius: 18,
                   offset: const Offset(0, 8),
                 ),
@@ -99,7 +99,7 @@ class _LoginScreenState extends State<LoginScreen> {
                 Text(
                   'Log in to your account',
                   style: theme.textTheme.bodyMedium?.copyWith(
-                    color: color.onSurface.withValues(alpha: 0.7), // Fixed deprecated withOpacity
+                    color: color.onSurface.withOpacity(0.7), // Fixed deprecated withOpacity
                   ),
                 ),
                 const SizedBox(height: 24),
@@ -147,7 +147,7 @@ class _LoginScreenState extends State<LoginScreen> {
                   ),
                 ),
                 const SizedBox(height: 16),
-                Divider(color: color.outline.withValues(alpha: 0.3)), // Fixed deprecated withOpacity
+                Divider(color: color.outline.withOpacity(0.3)), // Fixed deprecated withOpacity
                 const SizedBox(height: 16),
                 Center(
                   child: TextButton(

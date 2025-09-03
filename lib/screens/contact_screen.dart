@@ -41,7 +41,7 @@ class ContactScreen extends StatelessWidget {
             Text(
               'Feel free to reach out to us for any queries, feedback, or support regarding ACE-thetic.',
               style: theme.textTheme.bodyMedium?.copyWith(
-                color: color.onSurface.withValues(alpha: 0.8),
+                color: color.onSurface.withOpacity(0.8),
               ),
             ),
           ],

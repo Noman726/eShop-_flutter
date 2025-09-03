@@ -132,7 +132,7 @@ class _ItemDetailScreenState extends State<ItemDetailScreen> {
                       Text(
                         'by ${_item!.user?.name ?? 'Unknown Seller'}',
                         style: theme.textTheme.bodyMedium?.copyWith(
-                          color: colorScheme.onSurface.withValues(alpha: 0.7),
+                          color: colorScheme.onSurface.withOpacity(0.7),
                         ),
                       ),
                     ],
@@ -243,7 +243,7 @@ class _ItemDetailScreenState extends State<ItemDetailScreen> {
                                   Text(
                                     _item!.user?.email ?? '',
                                     style: theme.textTheme.bodySmall?.copyWith(
-                                      color: colorScheme.onSurface.withValues(alpha: 0.7),
+                                      color: colorScheme.onSurface.withOpacity(0.7),
                                     ),
                                   ),
                                 ],
@@ -267,7 +267,7 @@ class _ItemDetailScreenState extends State<ItemDetailScreen> {
           color: colorScheme.surface,
           boxShadow: [
             BoxShadow(
-              color: Colors.black.withValues(alpha: 0.1),
+              color: Colors.black.withOpacity(0.1),
               blurRadius: 10,
               offset: const Offset(0, -2),
             ),

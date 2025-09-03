@@ -94,23 +94,23 @@ class MyApp extends StatelessWidget {
       ),
       elevatedButtonTheme: ElevatedButtonThemeData(
         style: ButtonStyle(
-          backgroundColor: WidgetStateProperty.resolveWith((states) {
-            if (states.contains(WidgetState.hovered)) {
-              return colorScheme.primary.withValues(alpha: 0.8); // Fixed deprecated withOpacity
+          backgroundColor: MaterialStateProperty.resolveWith((states) {
+            if (states.contains(MaterialState.hovered)) {
+              return colorScheme.primary.withOpacity(0.8); // Fixed deprecated withOpacity
             }
-            if (states.contains(WidgetState.pressed)) {
-              return colorScheme.primary.withValues(alpha: 0.7); // Fixed deprecated withOpacity
+            if (states.contains(MaterialState.pressed)) {
+              return colorScheme.primary.withOpacity(0.7); // Fixed deprecated withOpacity
             }
             return colorScheme.primary;
           }),
-          foregroundColor: WidgetStateProperty.all(colorScheme.onPrimary),
-          elevation: WidgetStateProperty.resolveWith(
-              (states) => states.contains(WidgetState.pressed) ? 2 : 4),
-          shape: WidgetStateProperty.all(
+          foregroundColor: MaterialStateProperty.all(colorScheme.onPrimary),
+          elevation: MaterialStateProperty.resolveWith(
+              (states) => states.contains(MaterialState.pressed) ? 2 : 4),
+          shape: MaterialStateProperty.all(
             RoundedRectangleBorder(borderRadius: BorderRadius.circular(12)),
           ),
-          minimumSize: WidgetStateProperty.all(const Size.fromHeight(50)),
-          textStyle: WidgetStateProperty.all(
+          minimumSize: MaterialStateProperty.all(const Size.fromHeight(50)),
+          textStyle: MaterialStateProperty.all(
             const TextStyle(fontSize: 16, fontWeight: FontWeight.w500),
           ),
         ),
@@ -120,7 +120,7 @@ class MyApp extends StatelessWidget {
         foregroundColor: colorScheme.onSecondary,
         elevation: 4,
       ),
-      cardTheme: CardThemeData(
+      cardTheme: CardTheme(
         color: colorScheme.surface,
         elevation: 5,
         shadowColor: Colors.black12,
@@ -138,7 +138,7 @@ class MyApp extends StatelessWidget {
         enabledBorder: OutlineInputBorder(
           borderRadius: BorderRadius.circular(12),
           borderSide:
-              BorderSide(color: colorScheme.secondary.withValues(alpha: 0.5)), // Fixed deprecated withOpacity
+              BorderSide(color: colorScheme.secondary.withOpacity(0.5)), // Fixed deprecated withOpacity
         ),
         focusedBorder: OutlineInputBorder(
           borderRadius: BorderRadius.circular(12),

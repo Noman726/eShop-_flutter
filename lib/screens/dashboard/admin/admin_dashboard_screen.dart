@@ -23,7 +23,7 @@ class AdminDashboardScreen extends StatelessWidget {
               fit: BoxFit.cover,
             ),
           ),
-            Container(color: Colors.black.withValues(alpha: 0.3)),
+            Container(color: Colors.black.withOpacity(0.3)),
             const Center(
               child: Text(
                 'Access Denied',
@@ -48,7 +48,7 @@ class AdminDashboardScreen extends StatelessWidget {
               fit: BoxFit.cover,
             ),
           ),
-          Container(color: Colors.black.withValues(alpha: 0.3)),
+          Container(color: Colors.black.withOpacity(0.3)),
           Center(
             child: GridView.count(
               shrinkWrap: true,
@@ -100,12 +100,12 @@ class _DashboardBox extends StatelessWidget {
       borderRadius: BorderRadius.circular(16),
       child: Container(
         decoration: BoxDecoration(
-          color: color.withValues(alpha: 0.15),
+          color: color.withOpacity(0.15),
           borderRadius: BorderRadius.circular(16),
-          border: Border.all(color: color.withValues(alpha: 0.5), width: 1.5),
+          border: Border.all(color: color.withOpacity(0.5), width: 1.5),
           boxShadow: [
             BoxShadow(
-              color: Colors.black.withValues(alpha: 0.15),
+              color: Colors.black.withOpacity(0.15),
               blurRadius: 6,
               offset: Offset(2, 2),
             ),
